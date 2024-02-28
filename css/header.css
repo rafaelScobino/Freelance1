@@ -1,0 +1,43 @@
+header{
+    margin-bottom: 0;
+}
+
+#headerDiv{
+    font-weight: bold;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+}
+
+#navDivImg{
+    justify-content: left;
+    min-width: 80px;
+    max-width: 20%;
+}
+
+#navDivUl{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5%;
+}
+
+.navDivLi{
+    margin-right: auto;
+    list-style: none;
+}
+
+.navDivLi a{
+    text-decoration:none;
+}
+
+#navContactDiv{
+    align-items: center;
+    justify-content: center;
+    margin-left: 40%;
+}
+
+.navDivHr{
+    margin-bottom: 0;
+}
