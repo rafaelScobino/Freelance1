@@ -3,6 +3,10 @@ header{
 }
 
 #headerDiv{
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    background-color: white;
     font-weight: bold;
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -10,9 +14,10 @@ header{
 }
 
 #navDivImg{
+    margin-left: 5%;
     justify-content: left;
     min-width: 80px;
-    max-width: 20%;
+    max-width: 30%;
 }
 
 #navDivUl{
@@ -24,8 +29,13 @@ header{
 }
 
 .navDivLi{
+    font-size: large;
     margin-right: auto;
     list-style: none;
+    padding: 1%;
+    background-color:  rgba(23,116,183, 0.6);
+    border: 2px solid black;
+    border-radius: 30px;
 }
 
 .navDivLi a{

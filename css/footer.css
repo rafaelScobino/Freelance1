@@ -1,0 +1,14 @@
+footer{
+    background-color:  rgba(23,116,183, 0.6);
+}
+
+.contactDiv h1{
+    text-align: center;
+}
+
+#contactLogo{
+    margin-left: 5%;
+    width: 10%;
+    border: 1px solid black;
+    border-radius: 100px;
+}

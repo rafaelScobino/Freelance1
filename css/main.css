@@ -8,7 +8,7 @@ main{
 
 #aboutImgs{
     margin: 0;
-    height:500px;
+    height:600px;
     width: 100%;
 }
 
@@ -16,22 +16,29 @@ main{
     position: absolute;
     display: block;
     font-weight: bold;
-    font-size: 300%;
+    font-size: 250%;
     color: black;
     margin: 20%;
-    background-color: rgba(4,114,188, 0.5);
+    background-color: rgba(23,116,183, 0.8);
     border-radius: 20px;
+}
+
+@media screen and (max-width: 549px){
+    #aboutImgsTitle{
+        font-size: 150%;
+        margin: 60% 20%;
+    }
 }
 
 
 .img1{background-image: url(./../assets/eng\ 1.jpg); background-size: cover;}
 .img2{background-image: url(./../assets/eng\ 2.jpg); background-size: cover;}
-.img3{background-image: url(./../assets/eng\ 3.jpg); background-size: cover;}
+.img3{background-image: url(./../assets/eng\ 3.jpg); background-size:cover;}
 
 
 #aboutUs{
     text-align: center;
-    margin:5% 20% ;
+    margin: 5% 20%;
 }
 
 #servicesDiv{
@@ -55,7 +62,7 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1px;
+    gap: 10px;
     margin-bottom: 5%;
     margin-right: 5%;
     padding: 0;
@@ -67,6 +74,57 @@ main{
 }
 
 .servicesDesc img{
-    height: 200px;
-    width: 200px;
+    height: 100px;
+}
+
+
+#projectsDivTitle{
+    text-align: center;
+}
+
+
+#projectsDivContent{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.projectsDivContent button {
+    text-align: center;
+    justify-content: center;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    border: 1px solid black;
+    border-radius: 30px;
+    background: rgba(23,116,183, 0.8);
+    font-size: 40px;
+}
+
+.prev {
+    left: 10%;
+}
+
+.next {
+    right: 10%;
+}
+
+.carousel {
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    overflow:hidden;
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    display: flex;
+    justify-content: center;
+    min-width: 50%;
 }
