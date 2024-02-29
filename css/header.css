@@ -3,13 +3,14 @@ header{
 }
 
 #headerDiv{
+    box-shadow: 1px 2px 15px  rgb(23,116,183);
     position: fixed;
     width: 100%;
     z-index: 1;
     background-color: white;
     font-weight: bold;
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: 1fr 1fr;
     align-items: center;
 }
 
@@ -20,10 +21,13 @@ header{
     max-width: 30%;
 }
 
+
 #navDivUl{
+    /* border: 1px solid black; */
     display: flex;
-    text-align: center;
+    text-align: right;
     align-items: center;
+    justify-content: end;
     flex-wrap: wrap;
     gap: 5%;
 }
@@ -32,22 +36,9 @@ header{
     font-size: large;
     margin-right: auto;
     list-style: none;
-    padding: 1%;
-    background-color:  rgba(23,116,183, 0.6);
-    border: 2px solid black;
-    border-radius: 30px;
 }
 
 .navDivLi a{
     text-decoration:none;
 }
 
-#navContactDiv{
-    align-items: center;
-    justify-content: center;
-    margin-left: 40%;
-}
-
-.navDivHr{
-    margin-bottom: 0;
-}

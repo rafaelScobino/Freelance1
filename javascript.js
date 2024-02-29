@@ -48,12 +48,12 @@ function carouselSlide(index){
 
 function prevSlide(){
 
-    currentIndex = (currentIndex - 1 + totalCards) % totalCards; 
+    currentIndex = (currentIndex - 3 + totalCards) % totalCards; 
     carouselSlide(currentIndex);
 }
 
 function nextSlide(){
-    currentIndex = (currentIndex + 1)  % totalCards;
+    currentIndex = (currentIndex + 3)  % totalCards;
     carouselSlide(currentIndex);
 }
 

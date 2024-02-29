@@ -2,6 +2,11 @@ footer{
     background-color:  rgba(23,116,183, 0.6);
 }
 
+#contactDiv{
+    height: 100vh;
+}
+
+
 .contactDiv h1{
     text-align: center;
 }

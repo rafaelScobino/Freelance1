@@ -8,7 +8,7 @@ main{
 
 #aboutImgs{
     margin: 0;
-    height:600px;
+    height:100vh;
     width: 100%;
 }
 
@@ -35,15 +35,72 @@ main{
 .img2{background-image: url(./../assets/eng\ 2.jpg); background-size: cover;}
 .img3{background-image: url(./../assets/eng\ 3.jpg); background-size:cover;}
 
-
 #aboutUs{
+    display: block;
+    padding-top: 70px;
+    margin-bottom: 1%;
     text-align: center;
-    margin: 5% 20%;
+    font-size: large;
 }
 
-#servicesDiv{
+#aboutUsDesc{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: auto 15%;
+    line-height: 2;
+}
+
+#mvvMrc{
+    list-style: none;
+}
+
+.mvv{
+    display: flex;
+    text-align: left;
+    margin-left: 15%;
+    margin-bottom: 1%;
+    font-size: 30px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+
+#valoresMrc{
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+
+#valoresMrc p{
+    display: flex;
+    margin-left: 10%;
+    text-align:center;
+}
+
+
+.valores{
+    display: flex;
+    text-align: left;
+    margin-left: 15%;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.servicesDiv{
+    padding-top: 10px;
+    margin:auto;
     text-align: center;
 }
+
+.servicesDivTitle{
+    background-color: rgba(23,116,183, 0.3) ;
+    height: auto;
+    padding: 20px;
+    margin: 3% 0 ;
+}
+
 
 .servicesDesc ul{
     display: grid;
@@ -62,10 +119,11 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
     margin-bottom: 5%;
     margin-right: 5%;
-    padding: 0;
+    border: 2px solid rgb(23,116,183) ;
+    border-radius: 50px;
+    padding: 5%;
 }
 
 .servicesDesc span{
@@ -77,8 +135,16 @@ main{
     height: 100px;
 }
 
+#projectsDiv{
+    padding-top: 10px;
+    height: 50%;
+}
 
 #projectsDivTitle{
+    background-color: rgba(23,116,183, 0.3) ;
+    height: auto;
+    padding: 20px;
+    margin: 3% 0 ;
     text-align: center;
 }
 
@@ -114,17 +180,20 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 70%;
+    width: 100%;
     overflow:hidden;
 }
 
 .carousel-inner {
     display: flex;
     transition: transform 0.5s ease-in-out;
+    width: fit-content;
 }
 
 .carousel-item {
     display: flex;
     justify-content: center;
-    min-width: 50%;
+    margin-right: auto;
+    min-width: 33%;
 }
+
