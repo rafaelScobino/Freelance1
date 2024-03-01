@@ -16,10 +16,6 @@ footer{
     }
 }
 
-.contactDiv h1{
-    font-weight: 600;
-    text-align: center;
-}
 
 #contactDivContent{
     display: flex;
@@ -31,16 +27,6 @@ footer{
     width: 150%;
     background-color:  rgba(23,116,183, 0.4);
 }
-
-/* #contactLogo{
-    margin-top: -8%;
-    margin-left: 5%;
-    width: 10%;
-    min-width: 100px;
-    height: 30%;
-    border: 1px solid black;
-    border-radius: 100px;
-} */
 
 #contactDivLinks{
     display: flex;
@@ -70,7 +56,6 @@ footer{
 }
 
 .contactDivLocal h3, h4, span{
-    width: 100%;
     text-align: left;
 }
 
