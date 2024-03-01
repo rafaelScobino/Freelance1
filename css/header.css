@@ -6,7 +6,7 @@ header{
     box-shadow: 1px 2px 15px  rgb(23,116,183);
     position: fixed;
     width: 100%;
-    z-index: 1;
+    z-index: 2;
     background-color: white;
     font-weight: bold;
     display: grid;
@@ -17,13 +17,12 @@ header{
 #navDivImg{
     margin-left: 5%;
     justify-content: left;
-    min-width: 80px;
+    min-width: 200px;
     max-width: 30%;
 }
 
 
 #navDivUl{
-    /* border: 1px solid black; */
     display: flex;
     text-align: right;
     align-items: center;
@@ -36,6 +35,13 @@ header{
     font-size: large;
     margin-right: auto;
     list-style: none;
+}
+
+.navDivLi:hover{
+    padding: 5px;
+    border-radius: 10px;
+    background-color: rgba(23,116,183,0.5);
+    box-shadow: 1px 2px 10px  rgb(23,116,183);
 }
 
 .navDivLi a{

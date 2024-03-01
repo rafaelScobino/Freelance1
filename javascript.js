@@ -18,19 +18,32 @@ function changeAboutImg (index){
             aboutImgsTitle.innerText = 'Qualificação em Mão de Obra'
                 break;
         default:
-            aboutImg.setAttribute('class','img2');
-            aboutImgsTitle.innerText = 'Excelência em Engenharia'
+            aboutImg.setAttribute('class','img1');
+            aboutImgsTitle.innerText = 'Projetos Especializados'
                 break;;
     }
-    if(index > 3){
+    if(index > 4){
         imgIndex = 1
     }else{
         imgIndex = index + 1
     }
-    console.log(imgIndex)
+
 }
 
 setInterval(() => {changeAboutImg(imgIndex);},3000)
+
+//ServicesDiv functions and translations
+// var  element = document.getElementById('120')
+
+// function trasnlateServiceCard(){
+//     element = document.getElementById("120")
+//     element.style.transform = 'translateX( 2px )';
+//     element.style.transform = 'translateY( -2px )';
+//     console.log('translatedCard')
+// }
+
+// element.ddEventListener("mouseover",trasnlateServiceCard);
+
 
 //carousel variables and functions
 var currentIndex = 0
@@ -47,14 +60,28 @@ function carouselSlide(index){
 }
 
 function prevSlide(){
-
-    currentIndex = (currentIndex - 3 + totalCards) % totalCards; 
+    currentIndex = (currentIndex - 1 + totalCards) % totalCards; 
     carouselSlide(currentIndex);
 }
 
 function nextSlide(){
-    currentIndex = (currentIndex + 3)  % totalCards;
+    if(window.innerWidth > 800 ){
+        if(currentIndex >= totalCards - 4){
+            currentIndex = 0
+        }else{
+            currentIndex = (currentIndex + 1 + totalCards) % totalCards;
+        }
+    }else{
+        currentIndex = (currentIndex + 1 + totalCards) % totalCards;
+    }
+
+
+    console.log(totalCards);
+    console.log(window.innerWidth);
+    console.log(currentIndex)
     carouselSlide(currentIndex);
 }
 
-setInterval(() => {nextSlide();},3000);
+setInterval(() => {nextSlide();},4000);
+
+//Adicionar feature que pare o carousel on mouse over carousel div

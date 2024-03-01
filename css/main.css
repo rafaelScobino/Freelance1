@@ -19,6 +19,7 @@ main{
     font-size: 250%;
     color: black;
     margin: 20%;
+    padding: 3px;
     background-color: rgba(23,116,183, 0.8);
     border-radius: 20px;
 }
@@ -33,11 +34,12 @@ main{
 
 .img1{background-image: url(./../assets/eng\ 1.jpg); background-size: cover;}
 .img2{background-image: url(./../assets/eng\ 2.jpg); background-size: cover;}
-.img3{background-image: url(./../assets/eng\ 3.jpg); background-size:cover;}
+.img3{background-image: url(./../assets/eng\ 3.jpg); background-size: cover;}
+/* .img4{background: url(./../assets/eng\ 4.jpg) center center fixed; background-size: cover;} */
 
 #aboutUs{
     display: block;
-    padding-top: 70px;
+    padding-top: 75px;
     margin-bottom: 1%;
     text-align: center;
     font-size: large;
@@ -94,6 +96,21 @@ main{
     text-align: center;
 }
 
+@media screen and (max-width: 1000px) {
+    .servicesDiv{
+        padding-top: 30px ;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .servicesDiv{
+        padding-top: 40px ;
+    }
+    .projectsDiv{
+        padding-top: 40px;
+    }
+}
+
 .servicesDivTitle{
     background-color: rgba(23,116,183, 0.3) ;
     height: auto;
@@ -115,15 +132,23 @@ main{
     }
 }
 
+.serviceCard:hover{
+    transform: translateY(4px);
+}
+
+
 .servicesDesc li{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     margin-bottom: 5%;
     margin-right: 5%;
     border: 2px solid rgb(23,116,183) ;
     border-radius: 50px;
-    padding: 5%;
+    box-shadow: 1px 2px 15px  rgb(23,116,183)  ;
+    padding: 3%;
+    transition: 0.3 ease-in-out ;
 }
 
 .servicesDesc span{
@@ -133,60 +158,52 @@ main{
 
 .servicesDesc img{
     height: 100px;
+    margin-bottom: 15px;
 }
 
 #projectsDiv{
-    padding-top: 10px;
-    height: 50%;
+    padding-top: 35px;
 }
 
 #projectsDivTitle{
     background-color: rgba(23,116,183, 0.3) ;
     height: auto;
     padding: 20px;
-    margin: 3% 0 ;
+    margin: 1% 0 ;
     text-align: center;
-}
-
-
-#projectsDivContent{
-    position: relative;
-    display: flex;
-    justify-content: center;
 }
 
 .projectsDivContent button {
     text-align: center;
-    justify-content: center;
+    justify-content:center;
     cursor: pointer;
     position: absolute;
-    top: 50%;
+    top: 90%;
     border: 1px solid black;
     border-radius: 30px;
     background: rgba(23,116,183, 0.8);
     font-size: 40px;
+    z-index: 1;
 }
 
 .prev {
-    left: 10%;
+    left: 1%;
 }
 
 .next {
-    right: 10%;
+    right: 1%;
 }
 
-.carousel {
-    /* border: 1px solid black; */
+#projectsDivContent{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    overflow:hidden;
+    justify-content: left;
+    overflow: hidden;
 }
+
 
 .carousel-inner {
     display: flex;
-    transition: transform 0.5s ease-in-out;
+    transition: transform 1s ease-in-out;
     width: fit-content;
 }
 
@@ -194,6 +211,7 @@ main{
     display: flex;
     justify-content: center;
     margin-right: auto;
-    min-width: 33%;
+    width: 300px;
+    padding-left:30px;
+    padding-right: 30px;
 }
-
