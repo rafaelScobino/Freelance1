@@ -54,6 +54,7 @@ main{
 }
 
 #mvvMrc{
+    padding: 0;
     list-style: none;
 }
 
@@ -69,14 +70,21 @@ main{
 
 
 #valoresMrc{
+    padding: 0;
     list-style: none;
     margin-bottom: 10px;
 }
 
+#valoresMrc span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
 
 #valoresMrc p{
     display: flex;
-    margin-left: 10%;
+    justify-content: center;
     text-align:center;
 }
 
