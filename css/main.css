@@ -14,7 +14,10 @@ main{
 
 #aboutImgsTitle{
     position: absolute;
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center ;
     font-weight: bold;
     font-size: 250%;
     color: black;
