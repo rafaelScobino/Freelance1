@@ -61,6 +61,10 @@ main{
     list-style: none;
 }
 
+#mvvMrc p{
+    margin: 18px 5%;
+}
+
 .mvv{
     display: flex;
     text-align: left;
@@ -69,6 +73,15 @@ main{
     font-size: 30px;
     font-weight: bold;
     font-style: italic;
+}
+
+@media screen and ( max-width: 800px) {
+    .mvv{
+        margin-left: 0;
+        text-align: center;
+        justify-content: center;
+
+    }
 }
 
 
